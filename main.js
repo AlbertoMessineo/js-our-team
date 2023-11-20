@@ -10,31 +10,31 @@
 const ourTeam = [
     {
         nome: 'Wayne',
-        cognome: 'Barnett',
+        cognome:'Barnett',
         ruolo:'Founder & CEO',
         foto: 'wayne-barnett-founder-ceo.jpg',
     },
     {
-        nome:' Angela',
-        cognome: 'Caroll',
+        nome:'Angela',
+        cognome:'Caroll',
         ruolo:'Chief Editor',
         foto:'angela-caroll-chief-editor',
     },
     {
         nome:'Walter',
-        cognome: 'Gordon',
+        cognome:'Gordon',
         ruolo:'Office Manager',
         foto:'walter-gordon-office-manager.jpg',
     },
     {
-        nome:' Angela',
-        cognome: 'Lopez',
+        nome:'Angela',
+        cognome:'Lopez',
         ruolo:'Social Media Manager',
         foto:'angela-lopez-social-media-manager.jpg',
     },
     {
         nome:'Scott',
-        cognome: 'Estrada',
+        cognome:'Estrada',
         ruolo:'Developer',
         foto:'scott-estrada-developer.jpg',
     },
@@ -46,12 +46,16 @@ const ourTeam = [
     },
 ];
 
-// for (let i = 0; i < ourTeam.lenght - 1; i ++){
-//     console.log(ourTeam[i].nome);
-//     console.log(ourTeam[i].cognome);
-//     console.log(ourTeam[i].ruolo);
-//     console.log(ourTeam[i].foto);
-// }
+for (let i = 0; i < 6; i ++){
+    console.log(ourTeam[i].nome);
+    console.log(ourTeam[i].cognome);
+    console.log(ourTeam[i].ruolo);
+    console.log(ourTeam[i].foto);
+    const mainContainer = document.getElementById('container');
+    const card = document.createElement('div');
+    mainContainer.append(card);
+
+}
 
 for (let nome in ourTeam){
     console.log(ourTeam[nome]);
@@ -59,6 +63,7 @@ for (let nome in ourTeam){
 // for (let cognome in ourTeam){
 //     console.log(ourTeam[cognome]);
 // }
+
 const mainContainer = document.getElementById('container');
 const card = document.createElement('div');
 mainContainer.append(card);
