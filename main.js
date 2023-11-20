@@ -59,3 +59,7 @@ for (let nome in ourTeam){
 // for (let cognome in ourTeam){
 //     console.log(ourTeam[cognome]);
 // }
+const mainContainer = document.getElementById('container');
+const card = document.createElement('div');
+mainContainer.append(card);
+
